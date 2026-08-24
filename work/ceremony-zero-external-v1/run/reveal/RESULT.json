@@ -1,0 +1,41 @@
+{
+  "ceremony_go": true,
+  "per_subject": {
+    "S0": {
+      "correct": true,
+      "truth": "ABSENT",
+      "truth_witness": null,
+      "verdict": "ABSENT",
+      "witness": null
+    },
+    "S1": {
+      "correct": true,
+      "truth": "PRESENT",
+      "truth_witness": [
+        4,
+        2
+      ],
+      "verdict": "PRESENT",
+      "witness": [
+        4,
+        2
+      ]
+    },
+    "S2": {
+      "correct": true,
+      "truth": "PRESENT",
+      "truth_witness": [
+        1,
+        3
+      ],
+      "verdict": "PRESENT",
+      "witness": [
+        1,
+        3
+      ]
+    }
+  },
+  "protocol": "CEREMONY-ZERO-EXTERNAL-V1",
+  "reveal_randomness": "6604e6badc6a0447365db70a90ecab65d2c654fbfde7eb584b571c590afc188e",
+  "score": "3/3"
+}

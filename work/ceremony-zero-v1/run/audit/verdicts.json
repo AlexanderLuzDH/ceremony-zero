@@ -1,0 +1,51 @@
+{
+  "S0": {
+    "evidence": {
+      "note": "forced-vs-forced majority census of declared class found no persistent witness; UNKNOWN outside class"
+    },
+    "verdict": "ABSENT",
+    "witness": null
+  },
+  "S1": {
+    "evidence": {
+      "example_control": [
+        [
+          0,
+          0
+        ],
+        4
+      ],
+      "votes": 24,
+      "witness": [
+        4,
+        2
+      ]
+    },
+    "verdict": "PRESENT",
+    "witness": [
+      4,
+      2
+    ]
+  },
+  "S2": {
+    "evidence": {
+      "example_control": [
+        [
+          0,
+          0
+        ],
+        4
+      ],
+      "votes": 24,
+      "witness": [
+        1,
+        3
+      ]
+    },
+    "verdict": "PRESENT",
+    "witness": [
+      1,
+      3
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "ceremony_go": false,
+  "per_subject": {
+    "S0": {
+      "correct": true,
+      "truth": "ABSENT",
+      "truth_witness": null,
+      "verdict": "ABSENT",
+      "witness": null
+    },
+    "S1": {
+      "correct": false,
+      "truth": "PRESENT",
+      "truth_witness": [
+        4,
+        2
+      ],
+      "verdict": "PRESENT",
+      "witness": [
+        0,
+        4
+      ]
+    },
+    "S2": {
+      "correct": false,
+      "truth": "PRESENT",
+      "truth_witness": [
+        1,
+        3
+      ],
+      "verdict": "PRESENT",
+      "witness": [
+        0,
+        0
+      ]
+    }
+  },
+  "protocol": "CEREMONY-ZERO-V1",
+  "score": "1/3"
+}

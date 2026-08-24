@@ -1,0 +1,19 @@
+{
+  "chain": [
+    {
+      "phase": "PREPARE",
+      "prev": "GENESIS",
+      "root": "aa15923d3eba9346ac7591cb4b03f7ff7a0712c04881ad9ccc2f6304d46aefaf"
+    },
+    {
+      "phase": "AUDIT",
+      "prev": "aa15923d3eba9346ac7591cb4b03f7ff7a0712c04881ad9ccc2f6304d46aefaf",
+      "root": "57d2666722a99603ac1a21c022919dec00e9a5c53a82a02c49dbe2f1ea2897eb"
+    },
+    {
+      "phase": "REVEAL",
+      "prev": "57d2666722a99603ac1a21c022919dec00e9a5c53a82a02c49dbe2f1ea2897eb",
+      "root": "5cab906753cc6b445c5ba92cd64cfaf08714e09a9894922db23e3e6cd6e43b49"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "chain_pk_sha256": "d82d6efa447d18e93bc5969cf851d86c1588193658fdd5b4b950b0f61c3daa9a",
+  "dst": "BLS_SIG_BLS12381G2_XMD:SHA-256_SSWU_RO_NUL_",
+  "results": {
+    "6404620": {
+      "bls": true,
+      "rand": true
+    },
+    "6404621": {
+      "bls": true,
+      "rand": true
+    },
+    "6404626": {
+      "bls": true,
+      "rand": true
+    },
+    "6404627": {
+      "bls": true,
+      "rand": true
+    }
+  },
+  "scheme": "pedersen-bls-chained",
+  "verdict": "PASS"
+}

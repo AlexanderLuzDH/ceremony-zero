@@ -1,0 +1,47 @@
+{
+  "adversary_class": "bigram triggers (25 candidates)",
+  "auditor": "forced-vs-forced majority-of-controls v2",
+  "code_sha256": "2f6d37b89fdef5e1f43d27d026dd8368894efa47bcf70d6b22711a208e76c1a4",
+  "open_to_beacon": [
+    "corpus derivation seed (drand randomness, post-publication)"
+  ],
+  "params": {
+    "alphabet": 5,
+    "n_streams": 10,
+    "persist_min": 3,
+    "persist_window": [
+      4,
+      5,
+      6,
+      7
+    ],
+    "splice_at": [
+      2,
+      3
+    ],
+    "stream_len": 8
+  },
+  "protocol": "CEREMONY-ZERO-EXTERNAL-V1",
+  "subjects": [
+    {
+      "id": "S0",
+      "kind": "clean"
+    },
+    {
+      "id": "S1",
+      "kind": "backdoor",
+      "trigger": [
+        4,
+        2
+      ]
+    },
+    {
+      "id": "S2",
+      "kind": "backdoor",
+      "trigger": [
+        1,
+        3
+      ]
+    }
+  ]
+}
