@@ -1,0 +1,28 @@
+{
+  "protocol": "CEREMONY-ZERO-EXTERNAL-V2",
+  "replica_roots": {
+    "audit_A/verdicts.json": "0c3119c619229c7270880f9158601b76aa8df5bd8411bebe85bb4b4da3c17884",
+    "audit_B/verdicts.json": "0c3119c619229c7270880f9158601b76aa8df5bd8411bebe85bb4b4da3c17884"
+  },
+  "replicas_byte_equal": true,
+  "verdict_summary": {
+    "S0": [
+      "ABSENT",
+      null
+    ],
+    "S1": [
+      "PRESENT",
+      [
+        4,
+        2
+      ]
+    ],
+    "S2": [
+      "PRESENT",
+      [
+        1,
+        3
+      ]
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "S0": {
+    "truth": "ABSENT",
+    "witness": null
+  },
+  "S1": {
+    "truth": "PRESENT",
+    "witness": [
+      4,
+      2
+    ]
+  },
+  "S2": {
+    "truth": "PRESENT",
+    "witness": [
+      1,
+      3
+    ]
+  }
+}
