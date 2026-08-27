@@ -1,0 +1,14 @@
+{
+  "authority": "AUTHORITY_NONE_PRE_CUSTODY",
+  "candidate_source_root": "67e1dd6720c81c5c3d2c0ce00fe56706a5bf3f7682ec7f9263087a2a46190f7c",
+  "custodian_id": "TEST_ONLY_LOCAL_FIXTURE_NOT_INDEPENDENT",
+  "ed25519_public_key": "3f7ebc94e77a246735ebc8ec8487074a6057ff51679d3df5e1b867b36d986c21",
+  "kind": "CEREMONY_ZERO_V3_EXTERNAL_TRUST_ANCHOR",
+  "run_mode": "TEST_ONLY_KNOWN_ANSWER_SIMULATION",
+  "source_manifest": {
+    "CHARTER.md": "3935e52151dc4cb179aabcdae4fa9d00ab935f48746d7740aa7b98ab93e19a32",
+    "PROTOCOL.md": "bd0d881d3977362677362c75d5a2e2d9e90be6ca98df91b84286819fe41aab47",
+    "cz3_core.py": "77b3a91f046bd75e344d27dbe18e928ae1063b9c717dc22ecd5eacfc28f24150",
+    "make_test_fixture.py": "602623e5caa97043353329e5698d54dd4cfef07280711ef005aa24a9e6c99c0a"
+  }
+}

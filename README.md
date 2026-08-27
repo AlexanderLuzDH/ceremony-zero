@@ -1,7 +1,8 @@
 # Ceremony Zero
 
-**Current status: v2 is a frozen NO-GO. This repository is a transparent
-failure-and-repair record, not a completed blind referee.**
+**Current status: v2 and the one permitted pre-custody v3 candidate are frozen
+NO-GO. This repository is a transparent failure-and-repair record, not a
+completed blind referee.**
 
 Ceremony Zero asks whether a fixed auditor can judge hidden behavior against
 ground truth it cannot access before its verdicts are finalized. The project
@@ -21,6 +22,15 @@ enforce complete subject/phase identity.
 The exact v2 verdict and executable counterexamples are in
 [`V2_NO_GO.md`](work/ceremony-zero-external-v2/V2_NO_GO.md).
 
+One separately chartered, authority-`NONE` v3 candidate then removed the
+unnecessary beacon, escrow, random corpus, and executable-subject machinery.
+Its exhaustive finite auditor passed all 26 policies, but the post-freeze
+hostile review found that the verifier accepted short whitespace-padded nonces,
+crashed on malformed public JSON, and did not bind duplicate-key JSON bytes
+unambiguously. It is preserved as
+[`FROZEN_V3_CANDIDATE_NO_GO`](work/ceremony-zero-v3-candidate/FREEZE.md), not
+silently repaired.
+
 ## Version record
 
 | Version | What it established | Current verdict |
@@ -29,6 +39,7 @@ The exact v2 verdict and executable counterexamples are in
 | Local repaired auditor | 3/3 on three author-built toy policies; byte-identical replay | Bounded local path-blind demonstration only |
 | External v1 | Immutable public chronology and BLS-verifiable drand evidence | Failed hostile review |
 | External v2 | Attempted blind registry, escrow, reveal, FINALIZE, and byte-pinning repairs; actual run 3/3 | **Frozen NO-GO** |
+| Pre-custody v3 candidate | Exhaustive 26-policy relation, hiding commitments, signed phase chain, total-verifier attempt; TEST_ONLY fixture 26/26 | **Frozen NO-GO after post-freeze hostile review; authority NONE** |
 
 ## Reproduce the v2 failures
 
@@ -75,21 +86,22 @@ that the answers remained secret.
 | +74s | drand reveal round `6404627` | BLS evidence preserved in the repository |
 | 2026-08-24T11:11:22Z | RESULT: 3/3 | [release](https://github.com/AlexanderLuzDH/perfect-digital-referee-custody/releases/tag/ceremony-zero-ext-v1-result-0a036845775b70fe39c8fac2c72bde5be287ae95288261218e44d9372e9487c8) |
 
-## Next gate: another administrator, not another process
+## Next gate: stop unless a new repair decision is made
 
 Hosted-runner work is stopped. The same implementation on GitHub Actions would
 add environment diversity while reproducing a relation already known to be
 invalid. It would add neither independent implementation nor independent
 custody, and GitHub Releases plus GitHub Actions are not provider-diverse.
 
-Work resumes only if an independently administered co-custodian agrees to hold
-the toy subjects and labels outside the author's pre-reveal access. The
-bounded gate is in
-[`V3_CUSTODY_GATE.md`](work/ceremony-zero-external-v2/V3_CUSTODY_GATE.md), and
-the concrete request is
-[`CO_CUSTODIAN_BRIEF.md`](work/ceremony-zero-external-v2/CO_CUSTODIAN_BRIEF.md).
+The one permitted solo candidate cycle is complete and terminal NO-GO. Its
+charter forbids patching the frozen bytes after review. A repair generation
+requires a new explicit decision; a later evidence-producing run still
+requires an independently administered custodian holding subjects, labels, and
+fresh nonces outside the author's pre-reveal access.
 
-If no custodian accepts, v2 remains the honest stopping point.
+Until both decisions exist, there is no runnable v3 candidate and no claim to
+take to a custodian. V2 and the pre-custody candidate are the honest stopping
+points.
 
 ## Repository layout
 
@@ -112,6 +124,14 @@ work/ceremony-zero-external-v2/
   test_v2_no_go.py                  executable counterexamples
   V3_CUSTODY_GATE.md                resume conditions; no v3 authority
   CO_CUSTODIAN_BRIEF.md             bounded request for a second custodian
+
+work/ceremony-zero-v3-candidate/
+  CHARTER.md                         one-cycle authority-NONE charter
+  cz3_core.py                        frozen exhaustive auditor/verifier candidate
+  test_cz3.py                        21 conformance and hostile tests
+  SOURCE_FREEZE.json                 exact 12-file source/fixture inventory
+  HOSTILE_REVIEW.md                  internal post-freeze attack record
+  FREEZE.md                          terminal v3 candidate NO-GO
 ```
 
 ## License

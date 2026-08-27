@@ -1,0 +1,71 @@
+{
+  "authority": "AUTHORITY_NONE_PRE_CUSTODY",
+  "candidate_source_root": "67e1dd6720c81c5c3d2c0ce00fe56706a5bf3f7682ec7f9263087a2a46190f7c",
+  "date": "2026-08-27",
+  "files": {
+    "CHARTER.md": {
+      "bytes": 2211,
+      "sha256": "3935e52151dc4cb179aabcdae4fa9d00ab935f48746d7740aa7b98ab93e19a32"
+    },
+    "PROTOCOL.md": {
+      "bytes": 4467,
+      "sha256": "bd0d881d3977362677362c75d5a2e2d9e90be6ca98df91b84286819fe41aab47"
+    },
+    "README.md": {
+      "bytes": 1559,
+      "sha256": "315ffc71abb60554b39e5e2596376304f4f90e73121ddde8b1cc35bfcc5f9142"
+    },
+    "V2_FAILURE_MAP.md": {
+      "bytes": 2005,
+      "sha256": "473cdb6687a967d304365e642da1826e6e569e59aa4c8cc112b6b98c030d8147"
+    },
+    "cz3_core.py": {
+      "bytes": 24931,
+      "sha256": "77b3a91f046bd75e344d27dbe18e928ae1063b9c717dc22ecd5eacfc28f24150"
+    },
+    "make_test_fixture.py": {
+      "bytes": 8235,
+      "sha256": "602623e5caa97043353329e5698d54dd4cfef07280711ef005aa24a9e6c99c0a"
+    },
+    "test_cz3.py": {
+      "bytes": 12419,
+      "sha256": "46a78c5cf4ca226c6f0b86c14900fdfbb1a8dc5808f83d4f61fce1358d442a72"
+    },
+    "test_fixture/FINALIZE.json": {
+      "bytes": 331393,
+      "sha256": "5f8b199d1196bb838e70c55f6c527ef628c99b2dcaf86bf80e4e171cbe66a1a7"
+    },
+    "test_fixture/PINNED_ROOTS.json": {
+      "bytes": 288,
+      "sha256": "2770e8ae3b7d510742d8c5c807e59e630945af7779f420fb07efb04677411874"
+    },
+    "test_fixture/PREPARE.json": {
+      "bytes": 2647,
+      "sha256": "bef56a0321c3cabe76af603c38008f527eaff6739807c283ebb555a41c24f084"
+    },
+    "test_fixture/REVEAL.json": {
+      "bytes": 11456,
+      "sha256": "325c993ec7dadab87b64fca28031fb15b9b149aa60363afbf8acff9eccf60207"
+    },
+    "test_fixture/TRUST_ANCHOR.json": {
+      "bytes": 782,
+      "sha256": "a838f7c6b673190c6c93a73cdd0a663c49fdda0b4be30241fcb5e7fa58fc1646"
+    }
+  },
+  "fixture_phase_roots": {
+    "FINALIZE": "9867ec8b1523a1f02ccdc3bf5bf9a0051d5d13128370db559e9e8441944ab922",
+    "PREPARE": "9f014c71dc87cd93196666431951245384ee5717b65ccfcccc6eb49bb2324df2",
+    "REVEAL": "95062157be148b26abc8c96168c6851f4c446cfeebae1bcb115d8aba3a08fb31"
+  },
+  "inventory_algorithm": "SHA256 of UTF-8 path<TAB>bytes<TAB>sha256<LF> lines sorted by path; excludes SOURCE_FREEZE.json, HOSTILE_REVIEW.md, and FREEZE.md",
+  "inventory_root": "918ccae34925b228c287e9a27981bd0a7dc6a36e1c73aaa2bc0978cb8986ea9c",
+  "status": "SOURCE_FROZEN_PENDING_HOSTILE_REVIEW",
+  "test_summary": {
+    "candidate_tests_passed": 21,
+    "deterministic_fixture_replay": true,
+    "frozen_v2_failure_reproductions_passed": 8,
+    "local_v1_replay": "GO_HISTORICAL_ONLY"
+  },
+  "total_bytes": 402393,
+  "total_files": 12
+}
