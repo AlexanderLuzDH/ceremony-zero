@@ -1,0 +1,46 @@
+{
+  "authority": "NONE",
+  "evaluated_commit": "0103d9c613cb46bcb9602a41fc1c93a8509005bd",
+  "evaluated_runner_sha256": "649f070c08e44bfbdd852908e782e283b2c070db4887cf4d0542cf0e82591acd",
+  "findings": [
+    {
+      "id": "V2-F1",
+      "result": "ground truth recovered in 608 guesses from the unsalted PREPARE label commitment",
+      "severity": "fatal"
+    },
+    {
+      "id": "V2-F2",
+      "result": "published escrow decrypted using already-public challenge randomness without a reveal signature",
+      "severity": "fatal"
+    },
+    {
+      "id": "V2-F3",
+      "result": "the valid challenge-round BLS signature is accepted although the committed reveal round is challenge + 12",
+      "severity": "fatal"
+    },
+    {
+      "id": "V2-F4",
+      "result": "valid deterministic corpus seeds 53 and 61 produce false S1 witnesses [2,4] and [2,1]",
+      "severity": "fatal"
+    },
+    {
+      "id": "V2-F5",
+      "result": "audit executes substituted subject bytes without checking the registry commitment",
+      "severity": "fatal"
+    },
+    {
+      "id": "V2-F6",
+      "result": "FINALIZE and RESULT do not bind a complete immutable PREPARE/challenge/escrow/code/subject phase chain",
+      "severity": "fatal"
+    }
+  ],
+  "frozen_artifact_hashes": {
+    "finalize_json_sha256": "305b1c7134d902982934a04bfb97da8d750353f1679e291004d5750c7a0d99df",
+    "prepare_registry_sha256": "e66764fe81a29fb0f4e0ad81a7fa183b6a7a10fe4031606af04c41abdbfe3a51",
+    "result_json_sha256": "0b55371b663e93ff17c9b7924b915f3bff3f436081b4d2b6a624904a191bd132"
+  },
+  "hosted_runner_disposition": "STOPPED_DO_NOT_REPLICATE_KNOWN_INVALID_RELATION",
+  "protocol": "CEREMONY-ZERO-EXTERNAL-V2",
+  "schema": "ceremony-zero.v2-no-go.v1",
+  "verdict": "NO_GO_PRE_FINALIZE_LABEL_DISCLOSURE_REVEAL_ROUND_UNBOUND_AUDITOR_FALSE_WITNESSES_SUBJECT_AND_PHASE_BINDING_INCOMPLETE"
+}
